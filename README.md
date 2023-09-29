@@ -19,7 +19,6 @@ Part 2
 The code
 https://dev.to/gnsp/making-the-matrix-effect-in-javascript-din
 
-
-In each frame, we need to render a semi transparent black rectangle on top of the previous frame, so that the characters rendered in previous frames can look progressively dimmed. Then we need to render the new characters at the end of each column for the current frame.
-
-They coordinates for each column is stored in the ypos array. In each frame we want to randomly reset some columns to start from the top again, so that it seems like columns of varying heights are falling from the top. For the rest of the columns we will simply move the y coordinate 20px down, so that in next frame a new character appears below the current one.
+This code snippet generates the Matrix effect using HTML5 Canvas, JavaScript, and CSS. It fills the screen with falling green digits resembling scenes from "The Matrix" film. 
+In each frame, we need to render a semi-transparent black rectangle on top of the previous frame, so that the characters rendered in previous frames can look progressively dimmed. Then we need to render the new characters at the end of each column for the current frame.
+The coordinate for each column is stored in the post array. In each frame, we want to randomly reset some columns to start from the top again, so that it seems like columns of varying heights are falling from the top. For the rest of the columns, we will simply move the y coordinate 20px down so that in the next frame a new character appears below the current one.
